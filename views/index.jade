@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-xs-12
+        form(name='onboarding', method='POST', enctype='multipart/form-data')
+          .form-group
+            label.control-label(for='attachment') Votre vidéo *
+            input#attachment.form-control(name='attachment', type='file', required)
+
+          button.btn.btn-success(type='submit') Envoyer
